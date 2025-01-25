@@ -1,96 +1,83 @@
-Here’s the updated README for **CrawlifAI** with all references to "Firecrawl" replaced and branding aligned with your project:
+Here’s the updated README for **OrchestrAI** with all branding aligned to your project:
 
-```markdown
 <h3 align="center">
   <a name="readme-top"></a>
   <img
-    src="https://raw.githubusercontent.com/your-username/crawlifai/main/img/crawlifai_logo.png"  <!-- Update logo path -->
+    src="https://raw.githubusercontent.com/your-username/orchestrai/main/img/orchestrai_logo.png"  <!-- Update logo path -->
     height="200"
   >
 </h3>
-```
-# 🤖 CrawlifAI
 
-Empower your AI apps with clean data from any website. Featuring advanced scraping, crawling, and data extraction capabilities.
+# 🤖 OrchestrAI
 
-_This repository is in development, and we’re still integrating custom modules into the mono repo. It's not fully ready for self-hosted deployment yet, but you can run it locally._
+Orchestrate AI workflows with seamless data integration. Automate web crawling, data extraction, and AI-ready pipelines.
 
-## What is CrawlifAI?
+_This repository is in active development. While functional, some modules are still being integrated into the mono repo._
 
-CrawlifAI is an API service that takes a URL, crawls it, and converts it into clean markdown or structured data. We crawl all accessible subpages and deliver LLM-ready content. No sitemap required.
+## What is OrchestrAI?
+
+OrchestrAI is an intelligent orchestration platform that crawls websites, extracts structured data, and transforms it into AI-ready pipelines. Automate complex workflows with built-in crawling, scraping, and LLM integration.
 
 *Join our stargazers to stay updated! ⭐*
 
 ## How to Use It?
 
-We provide an easy-to-use API with our hosted version. You can self-host the backend or use our cloud service. Get started with these resources:
+Access our unified API or self-host the backend. Get started with:
 
-- [x] **API**: [Documentation](https://docs.crawlifai.dev/api-reference/introduction) <!-- Update links -->
-- [x] **SDKs**: [Python](https://docs.crawlifai.dev/sdks/python), [Node](https://docs.crawlifai.dev/sdks/node), [Go](https://docs.crawlifai.dev/sdks/go)
-- [x] **LLM Frameworks**: [Langchain](https://python.langchain.com/docs/integrations/document_loaders/crawlifai/), [Llama Index](https://docs.llamaindex.ai/en/latest/examples/data_connectors/WebPageDemo/), [CrewAI](https://docs.crewai.com/)
-- [x] **Low-Code Tools**: [Langflow](https://docs.langflow.org/), [Dify](https://dify.ai/blog/integrated-with-crawlifai), [Zapier](https://zapier.com/apps/crawlifai)
-- [ ] Want an SDK or Integration? [Open an issue](https://github.com/your-username/crawlifai/issues).
+- [x] **API**: [Documentation](https://docs.orchestrai.dev/api-reference/introduction) <!-- Update links -->
+- [x] **SDKs**: [Python](https://docs.orchestrai.dev/sdks/python), [Node](https://docs.orchestrai.dev/sdks/node), [Go](https://docs.orchestrai.dev/sdks/go)
+- [x] **AI Frameworks**: [Langchain](https://python.langchain.com/docs/integrations/document_loaders/orchestrai/), [Llama Index](https://docs.llamaindex.ai/en/latest/examples/data_connectors/WebPageDemo/)
+- [x] **Low-Code Tools**: [Langflow](https://docs.langflow.org/), [Dify](https://dify.ai/blog/integrated-with-orchestrai)
+- [ ] Need an integration? [Open an issue](https://github.com/your-username/orchestrai/issues).
 
-**To run locally**, see our [self-hosting guide](CONTRIBUTING.md).
+**Local deployment**: See our [self-hosting guide](CONTRIBUTING.md).
 
 ---
 
 ### API Key
-Sign up at [CrawlifAI](https://crawlifai.dev) to get your API key. <!-- Update domain -->
+Get started at [OrchestrAI](https://orchestrai.dev) for your API key. <!-- Update domain -->
 
 ---
 
 ## Features
 
 ### Core Capabilities
-- **Scrape**: Extract content in markdown, HTML, or structured formats
-- **Crawl**: Auto-discover and process all subpages
-- **Extract**: Transform content into AI-ready schemas
-- **Map**: Rapid URL discovery for any domain
-- **Batch Processing**: Handle thousands of URLs simultaneously
+- **Orchestrate**: Build end-to-end AI workflows with crawling and data processing
+- **Crawl**: Auto-discover and process website structures
+- **Extract**: Transform content into schemas for RAG, fine-tuning, and analytics
+- **Integrate**: Connect to vector DBs, LLMs, and automation tools
 
 ### Advanced Features
-- **AI-Powered Parsing**: LLM-driven schema extraction
-- **Browser Actions**: Click, scroll, input, wait
-- **Dynamic Content**: Handle JavaScript-rendered pages
-- **Media Support**: PDFs, DOCX, images
-- **Enterprise-Grade**: Proxies, retries, anti-bot bypass
+- **Workflow Automation**: Chain crawling, extraction, and AI tasks
+- **Dynamic Execution**: Browser automation, retries, and JS rendering
+- **Multi-Format Support**: Websites, PDFs, DOCX, and images
+- **Enterprise Scalability**: Batch processing, proxies, and anti-bot handling
 
 ---
 
 ## Quickstart Examples
 
-### Scrape a URL
+### Run a Workflow
 ```bash
-curl -X POST https://api.crawlifai.dev/v1/scrape \  <!-- Update domain -->
-    -H 'Authorization: Bearer cai-YOUR_API_KEY' \  <!-- Update API key prefix -->
+curl -X POST https://api.orchestrai.dev/v1/run \  <!-- Update domain -->
+    -H 'Authorization: Bearer oai-YOUR_API_KEY' \  <!-- Update API key prefix -->
     -d '{
-      "url": "https://docs.crawlifai.dev",
-      "formats": ["markdown"]
-    }'
-```
-
-### Crawl a Website
-```bash
-curl -X POST https://api.crawlifai.dev/v1/crawl \
-    -H 'Authorization: Bearer cai-YOUR_API_KEY' \
-    -d '{
-      "url": "https://docs.crawlifai.dev",
-      "limit": 50
+      "workflow": "crawl-extract",
+      "url": "https://docs.orchestrai.dev"
     }'
 ```
 
 ### Extract Structured Data
 ```python
-from crawlifai import CrawlifAI  # Updated SDK name
+from orchestrai import OrchestrAI  # Updated SDK
 
-class CompanySchema(BaseModel):
-    mission: str
-    open_source: bool
+class ProductSchema(BaseModel):
+    features: list[str]
+    pricing: str
 
-data = CrawlifAI(api_key="cai-YOUR_KEY").extract(
-    url="https://crawlifai.dev",
-    schema=CompanySchema
+data = OrchestrAI(api_key="oai-YOUR_KEY").extract(
+    url="https://orchestrai.dev/pricing",
+    schema=ProductSchema
 )
 ```
 
@@ -100,33 +87,33 @@ data = CrawlifAI(api_key="cai-YOUR_KEY").extract(
 
 ### Python
 ```bash
-pip install crawlifai-py  # Updated package name
+pip install orchestrai
 ```
 
 ### Node.js
 ```bash
-npm install @crawlifai/sdk  # Updated package name
+npm install @orchestrai/sdk
 ```
 
 ---
 
-## Self-Hosting vs Cloud
+## Deployment Options
 
-CrawlifAI is open-source (AGPL-3.0) with a managed cloud option:
+OrchestrAI is open-source (AGPL-3.0) with a managed cloud service:
 
 | Feature               | Self-Hosted | Cloud          |
 |-----------------------|-------------|----------------|
-| Auto-scaling          | ❌          | ✅             |
-| Browser Automation    | ❌          | ✅             | 
+| Workflow Automation   | ✅          | ✅ (Enhanced)  |
+| Browser Execution     | ❌          | ✅             | 
 | Enterprise SLAs       | ❌          | ✅             |
 | Free Tier             | ✅          | ✅             |
 
 ---
 
 ## Contributing
-We welcome contributions! See our [contributing guide](CONTRIBUTING.md) for details. 
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md). 
 
-**Important**: Users must comply with website terms of service and robots.txt rules.
+**Note**: Users must respect website terms of service and robots.txt rules.
 
 ---
 
@@ -139,16 +126,3 @@ We welcome contributions! See our [contributing guide](CONTRIBUTING.md) for deta
 <p align="right">
   <a href="#readme-top">↑ Back to Top ↑</a>
 </p>
-```
-
-Key changes made:
-1. Replaced all "Firecrawl" references with "CrawlifAI"
-2. Updated logo path (you'll need to add your actual logo)
-3. Changed API endpoints to `api.crawlifai.dev`
-4. Modified SDK package names and imports
-5. Updated API key prefix to `cai-`
-6. Simplified the feature comparison table
-7. Removed redundant code examples (kept core functionality)
-8. Streamlined documentation links
-
-Would you like me to adjust any specific sections further?
