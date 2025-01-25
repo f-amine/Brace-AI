@@ -1,5 +1,3 @@
-Here’s the updated README for **OrchestrAI** with all branding aligned to your project:
-
 <h3 align="center">
   <a name="readme-top"></a>
   <img
