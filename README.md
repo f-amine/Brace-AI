@@ -1,106 +1,92 @@
-# 🤖 OrchestrAI
+# 🌐 Appit
+Connect, Share, and Grow with the Next Generation Social Platform for Crypto & AI Enthusiasts
 
-Orchestrate AI workflows with seamless data integration. Automate web crawling, data extraction, and AI-ready pipelines.
+*This platform is actively evolving. Core features are stable while new capabilities are being added regularly.*
 
-_This repository is in active development. While functional, some modules are still being integrated into the mono repo._
+## What is Appit?
+Appit is a specialized social platform bringing together crypto and AI communities. Share insights, track markets, and engage with cutting-edge technology discussions in one integrated space.
 
-## What is OrchestrAI?
-
-OrchestrAI is an intelligent orchestration platform that crawls websites, extracts structured data, and transforms it into AI-ready pipelines. Automate complex workflows with built-in crawling, scraping, and LLM integration.
-
-*Join our stargazers to stay updated! ⭐*.
+*Join our growing community! ⭐*
 
 ---
-
-### API Key
-Get started at [OrchestrAI](https://orchestrai.framer.website/) for your API key. <!-- Update domain -->
+### Access
+Get started at [Appit](https://appit.network) 
 
 ---
-
 ## Features
-
 ### Core Capabilities
-- **Orchestrate**: Build end-to-end AI workflows with crawling and data processing
-- **Crawl**: Auto-discover and process website structures
-- **Extract**: Transform content into schemas for RAG, fine-tuning, and analytics
-- **Integrate**: Connect to vector DBs, LLMs, and automation tools
+- **Connect**: Build your network with crypto and AI professionals
+- **Share**: Post updates, analysis, and technical insights
+- **Track**: Monitor crypto markets and AI developments
+- **Learn**: Access community knowledge and expert resources
 
 ### Advanced Features
-- **Workflow Automation**: Chain crawling, extraction, and AI tasks
-- **Dynamic Execution**: Browser automation, retries, and JS rendering
-- **Multi-Format Support**: Websites, PDFs, DOCX, and images
-- **Enterprise Scalability**: Batch processing, proxies, and anti-bot handling
+- **Market Integration**: Real-time crypto price tracking and alerts
+- **AI Tools**: Built-in analysis and prediction tools
+- **Content Discovery**: Smart feed customization
+- **Professional Networking**: Industry-specific connections
 
 ---
-
-## Quickstart Examples
-
-### Run a Workflow
-```bash
-curl -X POST https://api.orchestrai.dev/v1/run \  <!-- Update domain -->
-    -H 'Authorization: Bearer oai-YOUR_API_KEY' \  <!-- Update API key prefix -->
-    -d '{
-      "workflow": "crawl-extract",
-      "url": "https://docs.orchestrai.dev"
-    }'
+## Getting Started
+### Create Your Profile
+```json
+{
+    "interests": ["crypto", "AI", "blockchain"],
+    "expertise": ["trading", "machine learning"],
+    "connections": "public"
+}
 ```
 
-### Extract Structured Data
+### API Integration
 ```python
-from orchestrai import OrchestrAI  # Updated SDK
+from appit import AppitAPI
 
-class ProductSchema(BaseModel):
-    features: list[str]
-    pricing: str
-
-data = OrchestrAI(api_key="oai-YOUR_KEY").extract(
-    url="https://orchestrai.dev/pricing",
-    schema=ProductSchema
+client = AppitAPI(api_key="YOUR_API_KEY")
+feed = client.get_personalized_feed(
+    topics=["crypto", "AI"],
+    content_type="analysis"
 )
 ```
 
 ---
-
-## SDK Installation
-
-### Python
+## Installation
+### Mobile Apps
 ```bash
-pip install orchestrai
+# iOS
+App Store: "Appit Social"
+
+# Android
+Play Store: "Appit Social"
 ```
 
-### Node.js
+### Developer SDK
 ```bash
-npm install @orchestrai/sdk
+npm install @appit/sdk
 ```
 
 ---
+## Account Tiers
+Appit offers flexible options for different user needs:
 
-## Deployment Options
-
-OrchestrAI is open-source (AGPL-3.0) with a managed cloud service:
-
-| Feature               | Self-Hosted | Cloud          |
-|-----------------------|-------------|----------------|
-| Workflow Automation   | ✅          | ✅ (Enhanced)  |
-| Browser Execution     | ❌          | ✅             | 
-| Enterprise SLAs       | ❌          | ✅             |
-| Free Tier             | ✅          | ✅             |
+| Feature               | Free         | Pro           |
+|----------------------|--------------|---------------|
+| Social Features      | ✅           | ✅            |
+| Market Analysis      | Basic        | Advanced      |
+| AI Tools             | Limited      | Full Access   |
+| API Access           | ❌           | ✅            |
 
 ---
+## Community Guidelines
+We maintain a professional, respectful environment. See [GUIDELINES.md](GUIDELINES.md).
 
-## Contributing
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md). 
-
-**Note**: Users must respect website terms of service and robots.txt rules.
-
----
-
-## License
-- Core: AGPL-3.0
-- SDKs: MIT
+**Note**: Users must comply with financial regulations and ethical AI practices.
 
 ---
+## Legal
+- Terms of Service: [Terms](https://appit.network/terms)
+- Privacy Policy: [Privacy](https://appit.network/privacy)
 
+---
 <p align="right">
   <a href="#readme-top">↑ Back to Top ↑</a>
 </p>
