@@ -1,11 +1,3 @@
-<h3 align="center">
-  <a name="readme-top"></a>
-  <img
-    src="https://raw.githubusercontent.com/your-username/orchestrai/main/img/orchestrai_logo.png"  <!-- Update logo path -->
-    height="200"
-  >
-</h3>
-
 # 🤖 OrchestrAI
 
 Orchestrate AI workflows with seamless data integration. Automate web crawling, data extraction, and AI-ready pipelines.
