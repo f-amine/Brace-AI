@@ -16,24 +16,12 @@ _This repository is in active development. While functional, some modules are st
 
 OrchestrAI is an intelligent orchestration platform that crawls websites, extracts structured data, and transforms it into AI-ready pipelines. Automate complex workflows with built-in crawling, scraping, and LLM integration.
 
-*Join our stargazers to stay updated! ⭐*
-
-## How to Use It?
-
-Access our unified API or self-host the backend. Get started with:
-
-- [x] **API**: [Documentation](https://docs.orchestrai.dev/api-reference/introduction) <!-- Update links -->
-- [x] **SDKs**: [Python](https://docs.orchestrai.dev/sdks/python), [Node](https://docs.orchestrai.dev/sdks/node), [Go](https://docs.orchestrai.dev/sdks/go)
-- [x] **AI Frameworks**: [Langchain](https://python.langchain.com/docs/integrations/document_loaders/orchestrai/), [Llama Index](https://docs.llamaindex.ai/en/latest/examples/data_connectors/WebPageDemo/)
-- [x] **Low-Code Tools**: [Langflow](https://docs.langflow.org/), [Dify](https://dify.ai/blog/integrated-with-orchestrai)
-- [ ] Need an integration? [Open an issue](https://github.com/your-username/orchestrai/issues).
-
-**Local deployment**: See our [self-hosting guide](CONTRIBUTING.md).
+*Join our stargazers to stay updated! ⭐*.
 
 ---
 
 ### API Key
-Get started at [OrchestrAI](https://orchestrai.dev) for your API key. <!-- Update domain -->
+Get started at [OrchestrAI](https://orchestrai.framer.website/) for your API key. <!-- Update domain -->
 
 ---
 
