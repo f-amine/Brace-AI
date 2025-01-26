@@ -1,92 +1,85 @@
-# 🌐 Appit
-Connect, Share, and Grow with the Next Generation Social Platform for Crypto & AI Enthusiasts
+# 🤖 Proxio  
+**Build AI Chatbots That Sound Like You**  
+*Train personalized chatbots using your X account’s voice, data, and expertise. Automate engagement while staying authentically **you**.*  
 
-*This platform is actively evolving. Core features are stable while new capabilities are being added regularly.*
-
-## What is Appit?
-Appit is a specialized social platform bringing together crypto and AI communities. Share insights, track markets, and engage with cutting-edge technology discussions in one integrated space.
-
-*Join our growing community! ⭐*
+*Proxio is in active development, with core chatbot training stable and new conversational AI features rolling out monthly.*  
 
 ---
-### Access
-Get started at [Appit](https://appit.network) 
 
----
-## Features
-### Core Capabilities
-- **Connect**: Build your network with crypto and AI professionals
-- **Share**: Post updates, analysis, and technical insights
-- **Track**: Monitor crypto markets and AI developments
-- **Learn**: Access community knowledge and expert resources
+## What is Proxio?  
+Proxio turns your X account into a dynamic AI chatbot. Share insights, automate support, or grow your audience—your chatbot learns from your tweets, threads, and interactions to mirror your unique voice.  
 
-### Advanced Features
-- **Market Integration**: Real-time crypto price tracking and alerts
-- **AI Tools**: Built-in analysis and prediction tools
-- **Content Discovery**: Smart feed customization
-- **Professional Networking**: Industry-specific connections
+*Start building for free today! ⚡*  
 
----
-## Getting Started
-### Create Your Profile
-```json
-{
-    "interests": ["crypto", "AI", "blockchain"],
-    "expertise": ["trading", "machine learning"],
-    "connections": "public"
-}
-```
+---  
+### Access  
+Launch your chatbot at [Proxio](https://proxio.ai)  
 
-### API Integration
-```python
-from appit import AppitAPI
+---  
+## Features  
+### Core Capabilities  
+- **Train**: Transform X content into a chatbot personality in 2 clicks  
+- **Customize**: Fine-tune tone, response depth, and expertise level  
+- **Deploy**: Embed chatbots on websites, X, or Discord  
+- **Analyze**: Track conversation quality and user engagement  
 
-client = AppitAPI(api_key="YOUR_API_KEY")
-feed = client.get_personalized_feed(
-    topics=["crypto", "AI"],
-    content_type="analysis"
-)
-```
+### Advanced Features  
+- **Multi-Persona**: Train separate bots for support, humor, or hot takes  
+- **X API Sync**: Automatically update bots as you post new content  
+- **Guardrails**: Prevent off-brand or risky replies  
+- **Dev Mode**: Extend with custom logic via JavaScript/Python  
 
----
-## Installation
-### Mobile Apps
-```bash
-# iOS
-App Store: "Appit Social"
+---  
+## Getting Started  
+### Connect Your X Account  
+```python  
+from proxio import Client  
 
-# Android
-Play Store: "Appit Social"
-```
+proxio = Client(api_key="YOUR_PROXIO_KEY")  
+proxio.train_bot(  
+    x_handle="@yourhandle",  
+    persona="professional"  # or "casual", "humorous", etc.  
+)  
+```  
 
-### Developer SDK
-```bash
-npm install @appit/sdk
-```
+### Embed Your Chatbot  
+```html  
+<!-- Add to your website -->  
+<script src="https://cdn.proxio.ai/embed.js" data-bot-id="YOUR_BOT_ID"></script>  
+```  
 
----
-## Account Tiers
-Appit offers flexible options for different user needs:
+---  
+## Installation  
+### Web Dashboard  
+No installation needed – use [Proxio Web](https://app.proxio.ai).  
 
-| Feature               | Free         | Pro           |
-|----------------------|--------------|---------------|
-| Social Features      | ✅           | ✅            |
-| Market Analysis      | Basic        | Advanced      |
-| AI Tools             | Limited      | Full Access   |
-| API Access           | ❌           | ✅            |
+### CLI Toolkit (Developers)  
+```bash  
+npm install proxio-toolkit  
+```  
 
----
-## Community Guidelines
-We maintain a professional, respectful environment. See [GUIDELINES.md](GUIDELINES.md).
+---  
+## Pricing Tiers  
+| Feature               | Free         | Pro ($20/mo) |  
+|-----------------------|--------------|--------------|  
+| Chatbots              | 1            | 5            |  
+| X Account Sync        | ✅           | ✅           |  
+| Custom Personas       | ❌           | ✅           |  
+| API Access            | ❌           | ✅           |  
+| Priority Training     | ❌           | ✅           |  
 
-**Note**: Users must comply with financial regulations and ethical AI practices.
+---  
+## Guidelines  
+Keep interactions respectful and compliant with [X’s API rules](https://developer.twitter.com).  
 
----
-## Legal
-- Terms of Service: [Terms](https://appit.network/terms)
-- Privacy Policy: [Privacy](https://appit.network/privacy)
+**Note**: Proxio bans spam, hate speech, or impersonation. Review [ETHICS.md](ETHICS.md).  
 
----
-<p align="right">
-  <a href="#readme-top">↑ Back to Top ↑</a>
-</p>
+---  
+## Legal  
+- Terms: [terms.proxio.ai](https://proxio.ai/terms)  
+- Privacy: [privacy.proxio.ai](https://proxio.ai/privacy)  
+
+---  
+<p align="right">  
+  <a href="#readme-top">↑ Back to Top ↑</a>  
+</p>  
