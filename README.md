@@ -1,14 +1,10 @@
-# 🤖 Brace-AI  
+# 🤖 Eliz  
 Your AI Automation Platform for Everyday Tasks with SDK and Web Support. Built on Solana.  
 *This repository is in active development. While functional, some modules are still being integrated into the mono repo.*
 
-## What is Brace-AI?  
-Brace-AI is an intelligent automation platform designed to simplify everyday tasks by integrating AI workflows seamlessly into your daily routine. From automating repetitive tasks to enabling advanced data processing, Brace-AI empowers users with SDK and web support, all built on the Solana blockchain for enhanced efficiency and scalability.  
+## What is Eliz?  
+Eliz is an intelligent automation platform designed to simplify everyday tasks by integrating AI workflows seamlessly into your daily routine. From automating repetitive tasks to enabling advanced data processing, Eliz empowers users with SDK and web support, all built on the Solana blockchain for enhanced efficiency and scalability.  
 *Join our stargazers to stay updated! ⭐*.
-
----
-### API Key  
-Get started at  [Brace-AI](https://brace-ai.xyz/) for your API key. 
 
 ---
 ## Features  
@@ -28,22 +24,22 @@ Get started at  [Brace-AI](https://brace-ai.xyz/) for your API key.
 ## Quickstart Examples  
 ### Run a Workflow  
 ```bash  
-curl -X POST https://api.brace-ai.dev/v1/run \  <!-- Update domain -->  
-    -H 'Authorization: Bearer brace-YOUR_API_KEY' \  <!-- Update API key prefix -->  
+curl -X POST https://api.eliz.dev/v1/run \ 
+    -H 'Authorization: Bearer eliz-YOUR_API_KEY' \  
     -d '{  
       "workflow": "crawl-extract",  
-      "url": "https://docs.brace-ai.dev"  
+      "url": "https://docs.eliz.dev"  
     }'  
 ```  
 
 ### Extract Structured Data  
 ```python  
-from brace_ai import BraceAI  # Updated SDK  
+from eliz import Eliz 
 class ProductSchema(BaseModel):  
     features: list[str]  
     pricing: str  
-data = BraceAI(api_key="brace-YOUR_KEY").extract(  
-    url="https://brace-ai.dev/pricing",  
+data = Eliz(api_key="eliz-YOUR_KEY").extract(  
+    url="https://eliz.dev/pricing",  
     schema=ProductSchema  
 )  
 ```  
@@ -52,17 +48,17 @@ data = BraceAI(api_key="brace-YOUR_KEY").extract(
 ## SDK Installation  
 ### Python  
 ```bash  
-pip install brace-ai  
+pip install eliz  
 ```  
 
 ### Node.js  
 ```bash  
-npm install @brace-ai/sdk  
+npm install @eliz/sdk  
 ```  
 
 ---
 ## Deployment Options  
-Brace-AI is open-source (AGPL-3.0) with a managed cloud service:  
+Eliz is open-source (AGPL-3.0) with a managed cloud service:  
 | Feature               | Self-Hosted | Cloud          |  
 |-----------------------|-------------|----------------|  
 | Task Automation       | ✅          | ✅ (Enhanced)  |  
