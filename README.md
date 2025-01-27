@@ -1,85 +1,106 @@
-# 🤖 Proxio  
-**Build AI Chatbots That Sound Like You**  
-*Train personalized chatbots using your X account’s voice, data, and expertise. Automate engagement while staying authentically **you**.*  
+# 🤖 OrchestrAI
 
-*Proxio is in active development, with core chatbot training stable and new conversational AI features rolling out monthly.*  
+Orchestrate AI workflows with seamless data integration. Automate web crawling, data extraction, and AI-ready pipelines.
+
+_This repository is in active development. While functional, some modules are still being integrated into the mono repo._
+
+## What is OrchestrAI?
+
+OrchestrAI is an intelligent orchestration platform that crawls websites, extracts structured data, and transforms it into AI-ready pipelines. Automate complex workflows with built-in crawling, scraping, and LLM integration.
+
+*Join our stargazers to stay updated! ⭐*.
 
 ---
 
-## What is Proxio?  
-Proxio turns your X account into a dynamic AI chatbot. Share insights, automate support, or grow your audience—your chatbot learns from your tweets, threads, and interactions to mirror your unique voice.  
+### API Key
+Get started at [OrchestrAI](https://orchestrai.framer.website/) for your API key. <!-- Update domain -->
 
-*Start building for free today! ⚡*  
+---
 
----  
-### Access  
-Launch your chatbot at [Proxio](https://proxio.ai)  
+## Features
 
----  
-## Features  
-### Core Capabilities  
-- **Train**: Transform X content into a chatbot personality in 2 clicks  
-- **Customize**: Fine-tune tone, response depth, and expertise level  
-- **Deploy**: Embed chatbots on websites, X, or Discord  
-- **Analyze**: Track conversation quality and user engagement  
+### Core Capabilities
+- **Orchestrate**: Build end-to-end AI workflows with crawling and data processing
+- **Crawl**: Auto-discover and process website structures
+- **Extract**: Transform content into schemas for RAG, fine-tuning, and analytics
+- **Integrate**: Connect to vector DBs, LLMs, and automation tools
 
-### Advanced Features  
-- **Multi-Persona**: Train separate bots for support, humor, or hot takes  
-- **X API Sync**: Automatically update bots as you post new content  
-- **Guardrails**: Prevent off-brand or risky replies  
-- **Dev Mode**: Extend with custom logic via JavaScript/Python  
+### Advanced Features
+- **Workflow Automation**: Chain crawling, extraction, and AI tasks
+- **Dynamic Execution**: Browser automation, retries, and JS rendering
+- **Multi-Format Support**: Websites, PDFs, DOCX, and images
+- **Enterprise Scalability**: Batch processing, proxies, and anti-bot handling
 
----  
-## Getting Started  
-### Connect Your X Account  
-```python  
-from proxio import Client  
+---
 
-proxio = Client(api_key="YOUR_PROXIO_KEY")  
-proxio.train_bot(  
-    x_handle="@yourhandle",  
-    persona="professional"  # or "casual", "humorous", etc.  
-)  
-```  
+## Quickstart Examples
 
-### Embed Your Chatbot  
-```html  
-<!-- Add to your website -->  
-<script src="https://cdn.proxio.ai/embed.js" data-bot-id="YOUR_BOT_ID"></script>  
-```  
+### Run a Workflow
+```bash
+curl -X POST https://api.orchestrai.dev/v1/run \  <!-- Update domain -->
+    -H 'Authorization: Bearer oai-YOUR_API_KEY' \  <!-- Update API key prefix -->
+    -d '{
+      "workflow": "crawl-extract",
+      "url": "https://docs.orchestrai.dev"
+    }'
+```
 
----  
-## Installation  
-### Web Dashboard  
-No installation needed – use [Proxio Web](https://app.proxio.ai).  
+### Extract Structured Data
+```python
+from orchestrai import OrchestrAI  # Updated SDK
 
-### CLI Toolkit (Developers)  
-```bash  
-npm install proxio-toolkit  
-```  
+class ProductSchema(BaseModel):
+    features: list[str]
+    pricing: str
 
----  
-## Pricing Tiers  
-| Feature               | Free         | Pro ($20/mo) |  
-|-----------------------|--------------|--------------|  
-| Chatbots              | 1            | 5            |  
-| X Account Sync        | ✅           | ✅           |  
-| Custom Personas       | ❌           | ✅           |  
-| API Access            | ❌           | ✅           |  
-| Priority Training     | ❌           | ✅           |  
+data = OrchestrAI(api_key="oai-YOUR_KEY").extract(
+    url="https://orchestrai.dev/pricing",
+    schema=ProductSchema
+)
+```
 
----  
-## Guidelines  
-Keep interactions respectful and compliant with [X’s API rules](https://developer.twitter.com).  
+---
 
-**Note**: Proxio bans spam, hate speech, or impersonation. Review [ETHICS.md](ETHICS.md).  
+## SDK Installation
 
----  
-## Legal  
-- Terms: [terms.proxio.ai](https://proxio.ai/terms)  
-- Privacy: [privacy.proxio.ai](https://proxio.ai/privacy)  
+### Python
+```bash
+pip install orchestrai
+```
 
----  
-<p align="right">  
-  <a href="#readme-top">↑ Back to Top ↑</a>  
-</p>  
+### Node.js
+```bash
+npm install @orchestrai/sdk
+```
+
+---
+
+## Deployment Options
+
+OrchestrAI is open-source (AGPL-3.0) with a managed cloud service:
+
+| Feature               | Self-Hosted | Cloud          |
+|-----------------------|-------------|----------------|
+| Workflow Automation   | ✅          | ✅ (Enhanced)  |
+| Browser Execution     | ❌          | ✅             | 
+| Enterprise SLAs       | ❌          | ✅             |
+| Free Tier             | ✅          | ✅             |
+
+---
+
+## Contributing
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md). 
+
+**Note**: Users must respect website terms of service and robots.txt rules.
+
+---
+
+## License
+- Core: AGPL-3.0
+- SDKs: MIT
+
+---
+
+<p align="right">
+  <a href="#readme-top">↑ Back to Top ↑</a>
+</p>
